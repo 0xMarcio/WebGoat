@@ -15,11 +15,11 @@
 
   <name>WebGoat</name>
   <description>WebGoat, a deliberately insecure Web Application</description>
-  <url>https://github.com/WebGoat/WebGoat</url>
+  <url>https://github.com/0xMarcio/WebGoat</url>
   <inceptionYear>2006</inceptionYear>
   <organization>
     <name>OWASP</name>
-    <url>https://github.com/WebGoat/WebGoat/</url>
+    <url>https://github.com/0xMarcio/WebGoat/</url>
   </organization>
   <licenses>
     <license>
@@ -49,15 +49,15 @@
   </developers>
 
   <scm>
-    <connection>scm:git:git@github.com:WebGoat/WebGoat.git</connection>
-    <developerConnection>scm:git:git@github.com:WebGoat/WebGoat.git</developerConnection>
+    <connection>scm:git:git@github.com:0xMarcio/WebGoat.git</connection>
+    <developerConnection>scm:git:git@github.com:0xMarcio/WebGoat.git</developerConnection>
     <tag>HEAD</tag>
-    <url>https://github.com/WebGoat/WebGoat</url>
+    <url>https://github.com/0xMarcio/WebGoat</url>
   </scm>
 
   <issueManagement>
     <system>Github Issues</system>
-    <url>https://github.com/WebGoat/WebGoat/issues</url>
+    <url>https://github.com/0xMarcio/WebGoat/issues</url>
   </issueManagement>
 
   <properties>

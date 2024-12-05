@@ -5,7 +5,7 @@ on:
       - v*
 jobs:
   release:
-    if: github.repository == 'WebGoat/WebGoat'
+    if: github.repository == '0xMarcio/WebGoat'
     name: Release WebGoat
     runs-on: ubuntu-latest
     permissions:
@@ -48,9 +48,9 @@ jobs:
 
             ### Bug fixes
 
-            - [#743 - Character encoding errors](https://github.com/WebGoat/WebGoat/issues/743)
+            - [#743 - Character encoding errors](https://github.com/0xMarcio/WebGoat/issues/743)
 
-            Full change log: https://github.com/WebGoat/WebGoat/compare/${{ github.ref_name }}...${{ github.ref_name }}
+            Full change log: https://github.com/0xMarcio/WebGoat/compare/${{ github.ref_name }}...${{ github.ref_name }}
 
 
             ## Contributors
@@ -89,8 +89,8 @@ jobs:
           push: true
           platforms: linux/amd64, linux/arm64
           tags: |
-            webgoat/webgoat:${{ env.WEBGOAT_TAG_VERSION }}
-            webgoat/webgoat:latest
+            0xMarcio/WebGoat:${{ env.WEBGOAT_TAG_VERSION }}
+            0xMarcio/WebGoat:latest
           build-args: |
             webgoat_version=${{ env.WEBGOAT_MAVEN_VERSION }}
 
@@ -102,12 +102,12 @@ jobs:
           push: true
           platforms: linux/amd64, linux/arm64
           tags: |
-            webgoat/webgoat-desktop:${{ env.WEBGOAT_TAG_VERSION }}
-            webgoat/webgoat-desktop:latest
+            0xMarcio/WebGoat-desktop:${{ env.WEBGOAT_TAG_VERSION }}
+            0xMarcio/WebGoat-desktop:latest
           build-args: |
             webgoat_version=${{ env.WEBGOAT_MAVEN_VERSION }}
   new_version:
-    if: github.repository == 'WebGoat/WebGoat'
+    if: github.repository == '0xMarcio/WebGoat'
     name: Update to next SNAPSHOT version
     needs: [ release ]
     runs-on: ubuntu-latest
