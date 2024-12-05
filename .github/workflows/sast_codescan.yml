@@ -12,5 +12,4 @@ jobs:
         with:
           asoc_key: ${{secrets.ASOC_KEY}}
           asoc_secret: ${{secrets.ASOC_SECRET}}
-          application_id: c8663683-adbd-4fe3-a11a-a289016e2270
-          wait_for_analysis: true
+          application_id: ${{secrets.ASOC_APP}}
